@@ -3,7 +3,7 @@ name: Firebase Deploy
 on:
   push:
     branches:
-      - principal # Ou o nome do seu branch, se for diferente de 'principal'
+      - principal
 
 jobs:
   build_and_deploy:
