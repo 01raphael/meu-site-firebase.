@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABRAL Simulados</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f0f0f0; }
+        
+        .container { max-width: 100%; padding: 20px; }
+        
+        header { background: #0066cc; color: white; padding: 15px; text-align: center; }
+        
+        .menu { background: white; margin: 10px 0; padding: 15px; border-radius: 5px; }
+        
+        .btn { 
+            display: block; width: 100%; padding: 15px; 
+            margin: 10px 0; background: #0066cc; 
+            color: white; border: none; border-radius: 5px; 
+            text-align: center; text-decoration: none;
+        }
+        
+        .simulado { 
+            background: white; margin: 10px 0; padding: 15px; 
+            border-radius: 5px; border-left: 5px solid #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CABRAL Simulados</h1>
+        <p>Preparação simples e eficiente</p>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <a href="#simulados" class="btn">📝 Simulados Disponíveis</a>
+            <a href="#resultados" class="btn">📊 Meus Resultados</a>
+            <a href="#sobre" class="btn">ℹ️ Sobre</a>
+        </div>
+
+        <div id="simulados">
+            <div class="simulado">
+                <h3>Simulado ENEM 2024</h3>
+                <p>45 questões - 4h de duração</p>
+                <button class="btn" onclick="iniciarSimulado(1)">Iniciar</button>
+            </div>
+            
+            <div class="simulado">
+                <h3>Simulado Matemática</h3>
+                <p>20 questões - 2h de duração</p>
+                <button class="btn" onclick="iniciarSimulado(2)">Iniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function iniciarSimulado(id) {
+            alert("Simulado " + id + " iniciado! Em desenvolvimento.");
+            // Aqui viria a lógica do simulado
+        }
+        
+        function mostrarResultados() {
+            alert("Área de resultados em desenvolvimento.");
+        }
+    </script>
+</body>
+</html>
